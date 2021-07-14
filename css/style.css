@@ -250,6 +250,7 @@ h1{
 .our-initiative {
 	margin-top: 45px;
 	margin-bottom: 25px;
+	background-color: white;
 }
 
 #collaborate_cta {
@@ -370,7 +371,7 @@ h1{
 	/*	
 		Images
 	*/
-	img {
+	img.frontpage_art {
 		position: absolute;
 		bottom: 0px;
 		left: 50%;
@@ -453,7 +454,7 @@ h1{
 		width: 50%;
 		height: auto;
 	}
-	img {
+	.frontpage_art {
 		display: block;
 		min-width: 250px;
 		max-height: 450px;
@@ -937,7 +938,7 @@ h1{
 		border: none;
 	}
 
-	img {
+	img.frontpage_art {
 		display: block;
 		height: 450px;
 		width: auto;
