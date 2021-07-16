@@ -1,0 +1,313 @@
+/* NAV STYLES */
+#nav-bar-container {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100vw;
+	z-index: 2;
+
+}
+
+#nav-bar-container::before {
+	position: absolute;
+	content: "";
+	background-color: #ffffff;
+	top: 0; left: 0;
+	width: 100%;
+	height: 50px;
+	z-index: -1;
+}
+
+.nav-bar {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	line-height: unset;
+}
+
+.nav-bar label {
+	cursor: pointer;
+}
+
+.nav-bar input {
+	height: 0; width: 0;
+	position: absolute;
+}
+
+.nav-bar li {
+	text-decoration: none;
+}
+
+.nav-bar .logo-box {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 10px 30px;
+}
+
+.nav-bar .logo {
+	height: 30px;
+	width: auto;
+}
+
+#mobile-menu-btn {
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	padding: 0px 30px;
+}
+
+#resources-btn {
+	display: none;
+}
+
+.nav-link,
+.nav-label {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 20px 40px;
+	background-color: #60AC5C;
+	color: #ffffff;
+	border-top: 2px solid white;
+}
+
+.nav-label {
+	justify-content: space-between;
+}
+
+.nav-link:visited {
+	color: #ffffff;
+}
+
+.nav-link:hover {
+	color: #ffffff;
+}
+
+.subnav .nav-link {
+	font-size: 17px;
+	padding: 15px 0px 15px 60px;
+	text-decoration: underline;
+	border: none;
+}
+
+.subnav li:first-of-type a.nav-link {
+	padding-top: 5px;
+}
+
+.subnav li:last-of-type a.nav-link {
+	padding-bottom: 30px;
+}
+
+.arrow {
+	width: 16px;
+	height: auto;
+}
+
+/* SHOW/HIDE NAV */
+.nav {
+	height: 0;
+	overflow: hidden;
+}
+
+#menu-input:checked ~ .nav {
+	height: 100%;
+}
+
+.subnav {
+	height: 0;
+	overflow: hidden;
+}
+
+#library input:checked ~ .subnav {
+	height: 100%;
+}
+
+#library input:checked + label > img {
+	transform: rotate(90deg);
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+	.desktop-max-width {
+		padding: 0 50px;
+		max-width: 1280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#nav-bar-container::before {
+		height: 62px;
+	}
+
+	.nav-bar {
+		font-size: 17px;
+		display: flex;
+	}
+
+	.nav-bar .logo-box {
+		height: 62px;
+		line-height: 62px;
+		padding: 8px 20px 8px 0px;
+	}
+
+	.nav-bar .logo {
+		height: 46px;
+	}
+
+	#mobile-menu-btn,
+	#mobile-home-btn {
+		display: none;
+	}
+
+	#resources-btn {
+		width: 225px;
+		height: 62px;
+		line-height: 62px;
+		color: #222222;
+		background-color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#main .nav-link {
+		color: #222222;
+		background-color: #ffffff;
+		padding: 0px 70px;
+		height: 62px;
+    /* border-bottom:3px solid #60AC5C; */
+	}
+
+	.nav {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+
+	.nav > ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	#main ul {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.nav-link,
+	.nav-link:visited {
+		border: none;
+	}
+
+	.nav li#library {
+		position: relative;
+		display: block;
+		width: 225px;
+	}
+
+	.nav-label {
+		font-size: 14px;
+		color: #ffffff;
+		padding: 20px 25px;
+	}
+
+	.subnav .nav-link {
+		font-size: 12px;
+		padding: 10px 40px;
+		height: 100%;
+		line-height: 1.5em;
+	}
+
+	.arrow {
+		width: 8px;
+	}
+
+	/* SHOW/HIDE NAV */
+	input#resources ~ ul {
+		height: 0;
+		width: 225px;
+		overflow: hidden;
+	}
+
+	input#resources:checked ~ ul {
+		height: 100%;
+	}
+
+	input#resources:checked + label {
+		background-color: #60AC5C;
+		color: #ffffff;
+	}
+
+	/* ARTICLE PAGE */
+
+	.breadcrumb {
+		line-height: 21px;
+		padding: 12px 0;
+	}
+
+	.breadcrumb li {
+		display: inline-block;
+	}
+	
+	.article-hero h1 {
+		font-size: 28px;
+		line-height: 35px;
+		margin: 24px 0;
+	}
+
+	.content-area {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	.column-two-third {
+		width: 66.66%;
+	}
+
+	.article-section::before {
+		height: 62px;
+		margin-top: -62px;
+	}
+	
+	.article-section h2 {
+		font-size: 20px;
+		line-height: 25px;
+		margin: 0;
+	}
+
+	.article-section p {
+		font-size: 18px;
+		line-height: 25px;
+		margin: 20px 0;
+	}
+	
+	.article-section .caption {
+		font-size: 14px;
+		line-height: 20px;
+		text-align: left;
+	}
+
+	.article-nav-box {
+		position: sticky;
+		top: 67px;
+		padding: 15px 35px 25px 35px;
+		width: 100%;
+		z-index: 2;
+	}
+	
+	.article-nav-box h2 {
+		font-size: 21px;
+		line-height: 51px;
+		margin-top: 0;
+	}
+
+	.article-nav a {
+		font-size: 17px;
+		line-height: 45px;
+	}
+}
