@@ -19,10 +19,7 @@ header p {
   background-color: #60AC5C;
     /* height: 32vh; */
   color: #fff;  
-}
-footer p, h1, a{
   text-align: center;
-  color: #fff;
 }
 h1{
   font-size: 32px;

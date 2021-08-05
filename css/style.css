@@ -26,14 +26,12 @@ ol, ul {
 h1, h2 {
 	font-family: 'Vollkorn';
 	letter-spacing: 0px;
-	color: #222;
 	text-align: center;
 }
 
 p {
 	font: normal normal normal 18px/35px Karla;
 	letter-spacing: 0px;
-	color: #222;
 	text-align: center;
 }
 
@@ -44,7 +42,7 @@ a:hover {
 li a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	color: #222;
+	/* color: #		; */
 	letter-spacing: 0px;
 	line-height: 2.5rem;
 }
