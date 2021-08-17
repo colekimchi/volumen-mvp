@@ -237,11 +237,12 @@ h1{
 	padding-bottom: 5%;
 }
 
-#about_block {
+.our-team {
 	background-color: #74e58e74;
 }
 
 .our-team, .our-initiative {
+	padding: 5% 3%;
 	text-align: center;
 }
 
@@ -518,21 +519,9 @@ h1{
 		border-style: solid solid solid none;
 	}
 
-	#about_block {
-		margin: 4%;
-		background-color: #FFF;
-		text-align: center;
-	}
-
 	.our-initiative {
 		margin-top: 0;
 		margin-bottom: 0;
-	}
-
-	.our_team, .our_initiative {
-		padding: 30px;
-		background-color: #FFF;
-		text-align: center;
 	}
 
 	#collaborate_cta {
@@ -589,10 +578,11 @@ h1{
 	}
 
 	#about_block {
-		margin: 4%;
+		/* margin: 4%; */
 		background-color: #FFF;
 		text-align: center;
 	}
+	/* test */
 
 	.our-initiative {
 		margin-top: 0;

@@ -1,0 +1,56 @@
+.carousel_wrapper{
+    position: relative;
+    /* border: 1px solid red; */
+}
+.article_card h2{
+    font-size: 25px;
+    padding: 0px;
+}
+.article_card h3{
+    font-size: 20px;
+    padding: 0px;
+}
+.card_wrapper{
+    position: relative;
+    width: 85%;
+    height: 400px;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+    padding: 10px 0px;
+    overflow:hidden;
+}
+.article_card{
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    margin: 0px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.article_card img{
+    object-fit:cover;
+    position: relative;
+    left:5%;
+    width:90%;
+    height: 150px;
+}
+
+.scroll_arrow{
+    position: absolute;
+    height: 3em;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #60AC5C;
+    top: 45%;
+}
+
+.prev{
+    transform: rotate(180deg);
+    left: 25px;
+}
+
+.next{
+    right: 25px;
+}
