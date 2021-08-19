@@ -137,6 +137,7 @@ img {
 
 #intro1 .text-container,
 #intro2 .text-container {
+	padding-top:2%;
 	padding-bottom: 2%;
 }
 
